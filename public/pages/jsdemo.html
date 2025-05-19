@@ -1,0 +1,141 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My CV webpage">
+    <meta name="author" content="Jenni t013747o" >
+    <meta charset="UTF-8">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#6f4e37">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="basestyle.css">
+    <link rel="stylesheet" href="otherstyle.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="jsdemo.js" defer></script>
+    <title>JS Demo</title>
+    <link rel="icon" type="image/x-icon" href="../images/shushafavi192x192.png">
+    <link rel="icon" type="image/png" href="../icons/favicon-96x96.png" sizes="96x96" >
+    <link rel="icon" type="image/svg+xml" href="../icons/favicon.svg" >
+    <link rel="shortcut icon" href="../icons/favicon.ico" >
+    <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" >
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" >
+    <link rel="manifest" href="../icons/site.webmanifest" >
+</head>
+
+<body>
+<!--nav bar-->
+<nav>
+    <ul class="topnav">
+        <a href="index.html"><img class="melogo" src="../images/MELOGO.jpg" alt="chinchilla picture"></a>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="demos.html">Demo</a></li>
+        <li><a href="interest.html">Interests</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="jsdemo.html">JS Demo</a></li>
+        <li><a href="cssdemo.html">CSS Demo</a></li>
+    </ul>
+</nav>
+
+<div class="borders">
+<!--FORM-->
+<h2> Paint shop!</h2>
+<h3> 1 paint can = <em>£2.00</em></h3>
+<!-- Colourinmg changing box-->
+<h2> Paint tester: </h2>
+<div class="container">
+    <div class="square"></div>
+        <div class="buttonrow">
+            <button class="pink">Pink</button>
+            <button class="purple">Purple</button>
+            <button class="blue">Blue</button>
+            <button class="reset1">Reset</button>
+        </div>
+</div>
+<br>
+<form id="paintForm">
+    <label for="colour">What colour paint do you want to buy?: </label><br>
+    <input type="text" id="colour" name="colour" placeholder="Please add a colour" required>
+    <br>
+
+    <label for="cansofpaint">How many cans do you want to buy?: </label><br>
+    <select name="cansofpaint" id="cansofpaint">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    </select>
+    <br>
+
+    <label for="name">What is the name on the order?: </label><br>
+    <input type="text" id="name" name="name" placeholder="Please add a name">
+    <br>
+
+    <button type="submit" value="Submit">Submit</button>
+    <button type="reset" value="Reset">Reset</button>
+
+</form>
+
+<div id="result"></div>
+<br>
+</div>
+
+
+<!-- Weather API-->
+<!-- By open-meteo.com-->
+<pre id="output" style="display: none;">Loading...</pre>
+
+<div id="daily-table"></div>
+<div id="hourly-table"></div>
+
+<script>
+const url = 'https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=temperature_2m_max,temperature_2m_min&hourly=temperature_2m,cloud_cover&timezone=auto';
+
+fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        // Hide raw output
+        document.getElementById("output").style.display = "none";
+
+        /* By Chatgbt to format data*/
+        // Build Daily Table
+        const daily = data.daily;
+        let dailyHtml = "<h2>Daily Forecast</h2><table border='1'><tr><th>Date</th><th>Min Temp (°C)</th><th>Max Temp (°C)</th></tr>";
+        for (let i = 0; i < daily.time.length; i++) {
+            dailyHtml += `<tr><td>${daily.time[i]}</td><td>${daily.temperature_2m_min[i]}</td><td>${daily.temperature_2m_max[i]}</td></tr>`;
+        }
+        dailyHtml += "</table>";
+        document.getElementById("daily-table").innerHTML = dailyHtml;
+
+        // Build Hourly Table (first 24 entries)
+        const hourly = data.hourly;
+        let hourlyHtml = "<h2>Hourly Forecast (First 24 Hours)</h2><table border='1'><tr><th>Time</th><th>Temp (°C)</th><th>Cloud Cover (%)</th></tr>";
+        for (let i = 0; i < 24; i++) {
+            hourlyHtml += `<tr><td>${hourly.time[i]}</td><td>${hourly.temperature_2m[i]}</td><td>${hourly.cloud_cover[i]}</td></tr>`;
+        }
+        hourlyHtml += "</table>";
+        document.getElementById("hourly-table").innerHTML = hourlyHtml;
+
+    })
+    .catch(error => {
+        document.getElementById("output").textContent = "Error loading data: " + error;
+    });
+</script>
+
+
+
+
+
+
+<div style="margin-bottom: 100px;"></div>
+<!--Footer------>
+<footer  class="footerinfo">
+    <ul  class="lifooter">
+        <li><a href="https://www.instagram.com/" target="_blank"><img class="logosize" src="../images/INSTAGRAM.jpg" alt="Instagram logo" ></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank"><img class="logosize" src="../images/FACEBOOK.jpg" alt="Facebook logo" ></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank"><img class="logosize" src="../images/YOUTUBE.jpg" alt="Youtube logo" ></a></li>
+    </ul>
+    <p>Jenni Tsang t013747o | University of Staffordshire | Assignment Software Dev</p>
+</footer>
+</body>

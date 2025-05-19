@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Demo Page</title>
+  <link rel="icon" type="image/png" href="../icons/favicon-96x96.png" sizes="96x96" >
+  <link rel="icon" type="image/svg+xml" href="../icons/favicon.svg" >
+  <link rel="shortcut icon" href="../icons/favicon.ico" >
+  <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" >
+  <meta name="apple-mobile-web-app-title" content="MyWebSite" >
+  <link rel="manifest" href="../icons/site.webmanifest" >
+  <link rel="manifest" href="icons/site.webmanifest" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="My CV webpage">
+  <meta name="author" content="Jenni t013747o" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../pages/basestyle.css">
+  <link rel="stylesheet" href="../pages/otherstyle.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+<!--nav bar-->
+<nav>
+    <ul class="topnav">
+        <a href="index.html"><img class="melogo" src="../images/MELOGO.jpg" alt="chinchilla picture"></a>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="demos.html">Demo</a></li>
+        <li><a href="interest.html">Interests</a></li>
+        <li><a href="qualifications.html">Qualifications</a></li>
+        <li><a href="jsdemo.html">JS Demo</a></li>
+        <li><a href="cssdemo.html">CSS Demo</a></li>
+    </ul>
+</nav>
+<!---------------------------------------------------------->
+    <header>
+      <h1 class="text-center">CSS Playground</h1>
+      <h2 class="text-center">The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+
+    </header>
+      <h2>A bit about this page</h2>
+      <p>My name is Jenni and I am on the first year of Software Development degree</p>
+      <p>A demonstration of what I can accomplish using vanilla CSS. This is part of my third assignment
+        in Software Development</p>
+      <h2>Cascading Style Sheets (CSS)</h2>
+      <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN definition of CSS </a> is    </p>
+      <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/CSS">
+        "a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media." (W3C(2022))
+      </blockquote>
+
+<!---------------------------------------------------------->
+<section class="section1">
+      <h2>What is CSS</h2>
+      <p>CSS is for the styling of web content, such as colours and layout. It allows the look and feel of the web
+        content to change when on different types of devices with different sized screens, such as computers and mobile
+        phones</p>
+      <p>The separation of HTML from CSS makes it easier for the developer to maintain web applications as you can share
+        style sheets across your pages, and style the pages differently in different situations. This is referred to as
+        the separation of content from presentation.</p>
+
+<div>
+  <div class="card-container card textsimple">
+      <p>CSS is made up of a number of <a href="https://www.w3.org/Style/CSS/current-work">different CSS
+        specifications.</a>, which are in these different statuses 
+      </p>
+      <ul class="textsimple">
+        <li>FPWD - First Public Working Draft</li>
+        <li>WD - Working Draft</li>
+        <li>CR - Candidate Recommendation</li>
+        <li>CRD - Candidate Recommendation Draft</li>
+        <li>PR - Proposed Recommendation</li>
+        <li>REC - Recommendation</li>
+        <li>SPSD - Superseded Recommendation</li>
+      </ul>
+      <p><a href="https://www.w3.org/Style/CSS/">Take a look at the CSS standards on the W3C site</a></p>
+      </div>
+</div>
+</section>
+
+<!---------------------------------------------------------->
+      <h2>Where did this idea come from?</h2>
+      <p>Inspiration for the content on this page came from <a href="http://daveshea.com/projects/zen/">Dave Shea CSS Zen
+          Garden</a>and a modern take on this by <a href="https://stylestage.dev/">Stephanie Eckles Style Stage</a>. Do take a look at these to get
+        inspiration on what CSS can do now.</p>
+
+      <p>Places to look for CSS tips and tricks include the following:</p>
+    <div class="flex-container">
+        <button class="buttoncolour"><a  href="https://developer.mozilla.org/en-US/docs/Web/CSS" style="color: white;">MDN Web Docs CSS Pages</a></button>
+        <button class="buttoncolour"><a  href="https://web.dev/learn/css/" style="color: white;"></a>Web Dev Learn CSS</a></button>
+        <button class="buttoncolour"><a  href="https://moderncss.dev/" style="color: white;"></a>Modern CSS Solutions</a></button>
+        <button class="buttoncolour"><a  href="https://css-tricks.com/" style="color: white;"></a>CSS Tricks</a></button>
+    </div>
+
+<!---------------------------------------------------------->
+<div>
+  <div class="card-container textsimple card">
+        <p>Some examples of modern CSS include:</p>
+          <ul class="textsimple">
+            <li>Flexbox</li>
+            <li>Grid</li>
+            <li>Custom Variables</li>
+            <li>@Support()</li>
+            <li>gradients</li>
+            <li>Animatiom</li>
+            <li>3D transformation</li>
+            <li>subgrid</li>
+            <li>calc()</li>
+            <li>container queries</li>
+          </ul>
+        </div>
+  </div>
+
+<div style="margin-bottom: 100px;"></div>
+
+<!--Footer------>
+<footer  class="footerinfo">
+    <ul  class="lifooter">
+        <li><a href="https://www.instagram.com/" target="_blank"><img class="logosize" src="../images/INSTAGRAM.jpg" alt="Instagram logo" ></a></li>
+        <li><a href="https://www.facebook.com/" target="_blank"><img class="logosize" src="../images/FACEBOOK.jpg" alt="Facebook logo" ></a></li>
+        <li><a href="https://www.youtube.com/" target="_blank"><img class="logosize" src="../images/YOUTUBE.jpg" alt="Youtube logo" ></a></li>
+    </ul>
+    <p>Jenni Tsang t013747o | University of Staffordshire | Assignment Software Dev</p>
+</footer>
+</div>
+</html>

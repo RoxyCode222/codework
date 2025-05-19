@@ -1,0 +1,59 @@
+{
+    "name": "CSS Portoriflo",
+    "short_name": "CV",
+    "icons": [
+        {
+            "src": "../icons/shushafavi512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "../icons/shushafavi192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },      
+        {
+            "src": "../icons/shushafavi192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "theme_color": "#ffe0e0",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "id": "index.html",
+    "start_url": "/",
+    "description": "My CV Portforillio website for Jenni, download to check it out!",
+    "shortcuts": [
+        {
+            "name": "CV Portforiliflo",
+            "short_name": "CV",
+            "description": "My CV Portforillio website",
+            "url": "index.html",
+            "icons": [
+                {
+                    "src": "../icons/shushafavi192x192.png",
+                    "sizes": "192x192"
+                } 
+] } ],
+
+    "screenshots": [
+        {
+            "src": "../icons/HOMEPAGE.png",
+            "type": "image/png",
+            "sizes": "500x609",
+            "form_factor": "narrow",
+            "description": "Snnipet of one of my pages."
+        },
+        {
+            "src": "../icons/QUAN.png",
+            "type": "image/png",
+            "sizes": "405x320",
+            "form_factor": "wide",
+            "description": "Snnipet of one of my pages."
+        }
+    ]
+}

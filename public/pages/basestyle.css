@@ -1,0 +1,191 @@
+/* Main -----------------------------------------*/
+/* MOPBILE LAYOUT*/
+@media only screen and (max-width: 767px) {
+    .topnav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .melogo {
+        height: 40px;
+        width: 40px;
+    }
+
+    .linav {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 10px;
+    }
+}
+
+
+/* DESKTOP BODY*/
+body {
+    background-color: white; 
+    color:black;
+    font-family:"Open Sans", sans-serif;
+    padding-bottom: 60px;
+}
+
+h1{
+    font-family: "DM Serif Display", serif;
+}
+h2{
+    font-family: "DM Serif Display", serif;
+}
+h3{
+    font-family: "DM Serif Display", serif;
+}
+p{
+    font-family:"Open Sans", sans-serif;
+}
+.text-center{
+    text-align: center;
+}
+
+/* text in the lists*/
+.textsimple {
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+/* Light and Dark mode */
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    color-scheme: light dark;
+    --h2-colour:#f2f2f2;
+}
+
+/* Centering an image*/
+.imagecenter{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Nav Bar--------------------------------------------*/
+/* Colour of the navbar*/
+.topnav {
+    background-color: #ffe0e0;
+    border-bottom: 1px solid #e2a3a3;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    display: flex;                  
+    align-items: center;           
+    gap: 20px;                     
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: #0a0a0a;
+}
+
+/* Nav image size*/
+.melogo{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+}
+/* List Information*/
+.linav{
+    display: inline;
+    align-items: center;
+
+}
+
+/* text in the lists*/
+a {
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+/*FOOTER -----------------------------------------------------*/
+/* Footer information*/
+.footerinfo{
+    background-color: #ffe0e0;
+    border-top: 1px solid #e2a3a3;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    padding: 5px 0;
+    align-items: center;
+    list-style-type: none;
+
+}
+
+/* Size for the social media images*/
+.logosize{
+    height: 50px;
+    width: 50px;
+}
+
+/* List Information*/
+.lifooter{
+    display: inline;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+table, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  --h2-colour:#f2f2f2;
+}
+
+@media (prefers-color-scheme: dark) {
+  /*Dark styles goes in here*/
+  :root {
+    --primary-background-colour: #0a0a0a;
+    --primary-text-colour: #f2f2f2;
+    --headfoot-background-colour: #CBC3E3;
+    --headfoot-text-colour: black;
+    --border-colour: #C4A484;
+    --hyperlink-colour:lightgrey;
+    --nav-background-colour:#1A024F;
+  
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  /*Light styles goes in here*/
+  :root {
+    --primary-background-colour: #f2f2f2;
+    --primary-text-colour: #0a0a0a;
+    --headfoot-background-colour: #483C32;
+    --headfoot-text-colour: #DFDBDA;
+    --border-colour: 	#6F4E37;
+    --hyperlink-colour:black;
+    --nav-background-colour:#eb932b;
+  }
+}
+
+.borders{
+    border-bottom: #e2a3a3 solid 2px;
+    border-color: #e2a3a3;
+}
+
+/* FORMS*/
+input{
+    padding: 5px;
+}

@@ -1,0 +1,87 @@
+body{
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(137, 177, 187));
+    font-family: "Space Grotesk", sans-serif;
+}
+h1{
+    font-family: "Playfair Display", serif;
+}
+h2{
+    font-family: "Playfair Display", serif;
+}
+h3{
+    font-family: "Playfair Display", serif;
+}
+p{
+    font-family:"Playfair Display", serif;
+}
+
+/* FONTS */
+
+.card{
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(1, 1, 19);
+    width: 40%;
+}
+
+/* Button settings */
+.buttoncolour{
+    background-color: #4a9ebe;
+    color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 2px;
+    border-color: rgb(80, 114, 165);
+}
+
+/* text in the lists*/
+.textsimple {
+    list-style-type: none;
+    background-color: white;
+
+}
+
+.section1{
+    background-color: aliceblue;
+    border-top: #4a9ebe solid 2px;
+    border-bottom: #4a9ebe solid 2px;
+    border-color: #4a9ebe;
+}
+
+.container{
+    align-items: center;
+
+}
+
+/* Colour changing box*/
+.square{
+    height: 500px;
+    width: 600PX;
+    background-color: rgb(0, 0, 0);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.buttonrow{
+    margin-top: 10px;
+}
+
+
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #85a5b9;
+    border-radius: 5px;
+}
