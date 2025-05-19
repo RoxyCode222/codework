@@ -24,7 +24,7 @@
     "theme_color": "#ffe0e0",
     "background_color": "#ffffff",
     "display": "standalone",
-    "id": "index.html",
+    "id": "../../index.html",
     "start_url": "/",
     "description": "My CV Portforillio website for Jenni, download to check it out!",
     "shortcuts": [
@@ -32,7 +32,7 @@
             "name": "CV Portforiliflo",
             "short_name": "CV",
             "description": "My CV Portforillio website",
-            "url": "index.html",
+            "url": "../../index.html",
             "icons": [
                 {
                     "src": "../icons/shushafavi192x192.png",
